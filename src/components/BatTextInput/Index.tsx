@@ -3,12 +3,17 @@ import React from 'react'
 
 import styles from './Styles'
 
-export default function Index() {
+interface batButtonInputProps {
+  pass: string,
+}
+
+export default function Index( props : batButtonInputProps) {
   return (
     <View>
       <TextInput
         style={styles.inputer}
         placeholder='pass'
+        value={props.pass}
       >
       </TextInput>
     </View>

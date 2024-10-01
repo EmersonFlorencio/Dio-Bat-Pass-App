@@ -1,10 +1,10 @@
 import React from 'react';
-import { View, Text } from 'react-native';
+import { View } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 
 import styles from './Styles';
 import Menu from '../../components/Menu/Menu';
-import BatTextInput from '../../components/BatTextInput/Index'
+import BatButton from '../../components/BatButton/Index';
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       </View>
 
       <View style={ styles.inputerContainer }>
-        <BatTextInput />
+        <BatButton />
       </View>
 
         <StatusBar style="light" />
